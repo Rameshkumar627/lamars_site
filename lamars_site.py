@@ -37,5 +37,10 @@ def contact_us():
     return render_template('contact.html')
 
 
+@app.route("/sitemap.xml")
+def sitemap():
+    return render_template('sitemap.xml')
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
